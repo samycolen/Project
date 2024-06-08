@@ -1,7 +1,6 @@
 # Sentiment Analysis Application
 
-This project is a simple web application built with Spring Boot that performs sentiment analysis on user-provided text using the Stanford CoreNLP library.
-
+A simple web application created using the spring boot which anaylysis the sentiment of entered text using the  stanfords NLP library.
 ## Table of Contents
 - [Overview](#overview)
 - [Features](#features)
@@ -15,21 +14,21 @@ This project is a simple web application built with Spring Boot that performs se
 
 ## Overview
 
-The Sentiment Analysis Application allows users to input a piece of text and receive a sentiment analysis of the text. The application uses Stanford CoreNLP for natural language processing and sentiment analysis.
+This app allow user to enter the text (specifically the messages we use while chating) which is a peice of text.Then this sentiment analysis app uses the Stanford CoreNLP for natural languegae processing and finally to sentiment analysis.
+
 
 ## Features
 
 - Input text through a web form
-- Perform sentiment analysis on the input text
-- Display the sentiment result
+- Perform sentiment analysis on the input text entered by user
+- Display the analysed sentiment result
 
 ## Prerequisites
 
-Before you begin, ensure you have met the following requirements:
+Before you begin,check the thins listed down here 
 
 - Java Development Kit (JDK) 8 or higher
 - Maven 3.6.0 or higher
-- An internet connection to download Maven dependencies
 
 ## Installation
 
