@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Sentiment Analysis</title>
+    <style>
+        /* Your existing CSS styles */
+        body {
+          margin: 0;
+          padding: 20px;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        #header {
+          margin: 5px;
+          text-align: center;
+        }
+        .Container {
+          background-color: black;
+          border-radius: 8px;
+          margin: 0 auto;
+          color: white;
+          max-width: 600px;
+          padding: 20px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          align-items: center;
+        }
+        label {
+          display: block;
+          padding: 10px;
+          margin-bottom: 40px;
+          margin-left: 18%;
+        }
+        input[type="text"] {
+          display: block;
+          color: black;
+          border: 1px solid;
+          padding: 7px;
+          width: 80%;
+          margin-left: 10%;
+          margin-bottom: 30px;
+        }
+
+        button {
+          display: block;
+          width: 20%;
+          margin-left: 40%;
+          border: none;
+          border-radius: 5px;
+          align-items: center;
+          cursor: pointer;
+          padding: 7px;
+        }
+        button:hover {
+          background-color: rgb(0, 0, 0);
+          color: white;
+        }
+        .result {
+          background-color: white;
+          margin-top: 20px;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+<h2 id="header">Sentiment Analyzer</h2>
+
+<div class="Container">
+    <form action="/analyze" method="post">
+        <label for="inputText">
+            :) Our model understand the sentiment of sentences...
+        </label>
+
+        <input
+                type="text"
+                id="inputText"
+                name="inputText"
+                placeholder="put your sentence here....."
+        />
+        <button type="submit">Analyze</button>
+        <div class="result">
+            <p th:text="${sentiment}"></p>
+        </div>
+    </form>
+</div>
+</body>
+</html>
